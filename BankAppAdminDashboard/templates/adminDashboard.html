@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{url_for('static',filename="css/style.css")}}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 align="center">Welcome Admin 😁</h1>
+    </header>
+    <main>
+      <div class="side-bar">
+        <a><button>Insert Data</button></a>
+      </div>
+      <div class="admin-work-area">
+        <form action="/insert" method="POST">
+          <h3 align="center">Create Customer</h3>
+          <br />
+          <input type="text" name="Acc" placeholder="Enter ACC NO" />
+          <input type="text" name="Name" placeholder="Enter Name" />
+          <input type="text" name="Mobile" placeholder="Enter Mobile" />
+          <input type="email" name="Email" placeholder="Enter Email" />
+          <input
+            type="text"
+            name="balance"
+            placeholder="Enter Opening Balance"
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>All Rights reserverd@2025</p>
+    </footer>
+  </body>
+</html>
